@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.my.hermes.dao.BoardMapper">
+
+	<select id="boardList" resultType="board">
+		select 
+			*
+		from
+			hermes_board
+		order by
+			board_num desc
+	</select>
+
+	
+</mapper>
